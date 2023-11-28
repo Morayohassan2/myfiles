@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .video-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('pexels-pixabay-268533.jpg') center center / cover no-repeat;
+            opacity: 0.2; /* Adjust as needed */
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-container">
+    <!-- Poster image for the video (fallback for browsers that do not support video) -->
+    <img src="" alt="Video Poster Image" style="width: 100%; height: 100vh; object-fit: cover;">
+
+    <!-- Video element -->
+    <video autoplay muted loop>
+        <source src="pexels-rodnae-productions-7092063 (720p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- Your page content goes here -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="matchless.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Responsive Navbar with Tailwind CSS</title>
+</head>
+<body>
+
+
+    <div class="container">
+
+         <video autoplay loop muted plays-inline class="back-video">
+            <source src="pexels-rodnae-productions-7092063" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>Matchless Tutors</h1>
+             <a href="#">Explore More</a>
+
+        </div>
+
+    </div>
+
+    
+<nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white font-bold text-lg">Your Logo</a>
+        <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-white">Home</a>
+            <a href="#" class="text-white">About</a>
+            <a href="#" class="text-white">Services</a>
+            <a href="#" class="text-white">Contact</a>
+        </div>
+        <button class="md:hidden text-white">
+            <!-- Hamburger Icon for mobile 
+            &#9776;
+        </button>
+    </div>
+</nav>
+
+ Your page content goes here -->
+
+</body>
+</html>
